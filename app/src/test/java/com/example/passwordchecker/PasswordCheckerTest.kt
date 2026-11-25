@@ -54,9 +54,9 @@ class PasswordCheckerTest {
     fun testMediumPassword() {
         assertEquals("Medium", PasswordChecker.getStrength("Test123"))
     }
-    // Test hasła spełniającego wszystkie warunki
+    // Celowo zmieniony test - Failed Path
     @Test
     fun testStrongPassword() {
-        assertEquals("Strong", PasswordChecker.getStrength("Example1234!"))
+        assertEquals("Weak", PasswordChecker.getStrength("Example1234!"))
     }
 }
